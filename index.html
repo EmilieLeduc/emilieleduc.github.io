@@ -5,183 +5,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Emilie Leduc</title>
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png"> <!-- Ajout du favicon -->
-    <link rel="stylesheet" href="style.css">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #ffffff;
-        }
-
-        /* Header layout */
-        header {
-            background-color: #fa6464;
-            color: white;
-            padding: 20px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        header .logo {
-            width: 200px; /* Ajuste la largeur de ton logo */
-        }
-
-        /* Navigation styling */
-        nav {
-            display: flex;
-            align-items: center;
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin: 0 15px;
-            font-size: 18px;
-            padding: 5px 10px;
-        }
-
-        /* Style for the "Contact" link */
-        nav a#contact-link {
-            border: 2px solid white;
-            border-radius: 5px;
-            transition: background-color 0.3s ease, color 0.3s ease;
-        }
-
-        nav a#contact-link:hover {
-            background-color: white;
-            color: #fa6464;
-        }
-
-        /* Section with background and photo */
-        .profile-section {
-            background-color: #ffbabd;
-            color: white;
-            padding: 40px 20px;
-            text-align: center;
-        }
-
-        .profile-section img {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            object-fit: cover;
-            margin-bottom: 15px;
-        }
-
-        .profile-section h1 {
-            margin: 0;
-            font-size: 36px;
-        }
-
-        section {
-            padding: 20px;
-            margin: 20px auto;
-            max-width: 1000px;
-            background-color: white;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-
-        h2 {
-            color: #333;
-        }
-
-        .project-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-            gap: 20px;
-        }
-
-        .project {
-            background-color: #f9f9f9;
-            border: 1px solid #ddd;
-            padding: 15px;
-            text-align: center;
-        }
-
-        footer {
-            text-align: center;
-            background-color: #fa6464;
-            color: white;
-            padding: 40px 20px;
-            margin-top: 40px;
-        }
-
-        .footer-container {
-            display: flex;
-            justify-content: space-between;
-            max-width: 1000px;
-            margin: 0 auto;
-        }
-
-        .footer-column {
-            width: 30%;
-            text-align: center;
-        }
-
-        .footer-column h3 {
-            margin-bottom: 15px;
-            font-size: 18px;
-        }
-
-        .footer-column ul {
-            list-style-type: none;
-            padding: 0;
-        }
-
-        .footer-column ul li {
-            margin-bottom: 10px;
-        }
-
-        .footer-column ul li a {
-            color: white;
-            text-decoration: none;
-            transition: color 0.3s ease;
-        }
-
-        .footer-column ul li a:hover {
-            color: #ffe0e6;
-        }
-
-        .fleur {
-            width: 150px; /* Agrandissement de l'image */
-            height: auto;
-        }
-
-        /* Style pour la phrase centrée */
-        .footer-bottom {
-            text-align: center;
-            margin-top: 20px;
-        }
-
-        .footer-bottom p {
-            margin: 0;
-            font-size: 14px;
-            color: white;
-        }
-    </style>
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png"> <!-- Ajout du favicon -->
+    <link rel="stylesheet" href="style/style.css">
+ 
 </head>
 
 <body>
     <header>
         <a href="index.html">
-            <img src="logo.png" alt="Logo Emilie Leduc" class="logo">
+            <img src="images/logo.png" alt="Logo Emilie Leduc" class="logo">
         </a>
         
         <!-- Menu de navigation à droite -->
         <nav>
-            <a href="#portfolio">Mon Portfolio</a>
-            <a href="#services">Mes Services</a>
-            <a href="#moi">Qui suis-je</a>
-            <a href="#contact" id="contact-link">Contact</a>
+            <a href="portfolio.html">Mon Portfolio</a>
+            <a href="services.html">Mes Services</a>
+            <a href="moi.html">Qui suis-je</a>
+            <a href="contact.html" id="contact-link">Contact</a>
         </nav>
     </header>
 
     <!-- Section avec photo et fond coloré -->
     <div class="profile-section">
-        <img src="photo.png.png" alt="Votre photo">
+        <img src="images/photo.png.png" alt="Votre photo">
         <h1>Emilie Leduc</h1>
         <p>Identité visuelle | Graphisme | Social Media | Communication 360° | Evènements</p>
     </div>
@@ -212,7 +58,7 @@
     <section id="cv">
         <h2>Mon CV</h2>
         <p>Vous pouvez télécharger mon CV en cliquant sur le lien ci-dessous :</p>
-        <a href="cv.pdf" target="_blank">Télécharger mon CV</a>
+        <a href="images/cv.pdf.pdf" target="_blank">Télécharger mon CV</a>
     </section>
     
     <section id="contact">
@@ -227,15 +73,15 @@
             <div class="footer-column">
                 <h3 class="red-text">Navigation</h3>
                 <ul>
-                    <li><a href="#projects">Mes Projets</a></li>
-                    <li><a href="#services">Mes Services</a></li>
-                    <li><a href="#about">Qui suis-je</a></li>
+                    <li><a href="portfolio.html">Mon Portfolio</a></li>
+                    <li><a href="services.html">Mes Services</a></li>
+                    <li><a href="moi.html">Qui suis-je</a></li>
                 </ul>
             </div>
     
             <!-- Colonne centrale : Fleur (agrandie) -->
             <div class="footer-column">
-                <img src="fleur.png" alt="Dessin de fleur" class="fleur">
+                <img src="images/fleur.png" alt="Dessin de fleur" class="fleur">
             </div>
     
             <!-- Colonne droite : Réseaux sociaux -->

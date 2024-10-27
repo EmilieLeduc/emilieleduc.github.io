@@ -5,150 +5,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Qui suis-je | Emilie Leduc</title>
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png"> <!-- Ajout du favicon -->
-    <link rel="stylesheet" href="style.css">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #ffffff;
-        }
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png"> <!-- Ajout du favicon -->
+    <link rel="stylesheet" href="style/style.css">
 
-        /* Header layout */
-        header {
-            background-color: #fa6464;
-            color: white;
-            padding: 20px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        header .logo {
-            width: 200px;
-        }
-
-        /* Navigation styling */
-        nav {
-            display: flex;
-            align-items: center;
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin: 0 15px;
-            font-size: 18px;
-            padding: 5px 10px;
-        }
-
-        nav a#contact-link {
-            border: 2px solid white;
-            border-radius: 5px;
-            transition: background-color 0.3s ease, color 0.3s ease;
-        }
-
-        nav a#contact-link:hover {
-            background-color: white;
-            color: #fa6464;
-        }
-
-        /* Portfolio section */
-        #portfolio-intro {
-            text-align: center;
-            padding: 40px 20px;
-            background-color: #ffbabd;
-            color: white;
-        }
-
-        /* New section for the image and text above the footer */
-        #about-section {
-            display: flex;
-            padding: 20px;
-            background-color: #f9f9f9;
-            align-items: center; /* Align items vertically center */
-        }
-
-        #about-section img {
-            width: 267px; /* Width for 4:3 aspect ratio */
-            height: 200px; /* Fixed height */
-            margin-right: 20px;
-        }
-
-        /* Footer layout */
-        footer {
-            background-color: #fa6464;
-            color: white;
-            padding: 40px 20px;
-        }
-
-        .footer-container {
-            display: flex;
-            justify-content: space-between;
-            max-width: 1000px;
-            margin: 0 auto;
-        }
-
-        .footer-column {
-            width: 30%;
-            text-align: center;
-        }
-
-        .footer-column h3 {
-            margin-bottom: 15px;
-            font-size: 18px;
-        }
-
-        .footer-column ul {
-            list-style-type: none;
-            padding: 0;
-        }
-
-        .footer-column ul li {
-            margin-bottom: 10px;
-        }
-
-        .footer-column ul li a {
-            color: white;
-            text-decoration: none;
-            transition: color 0.3s ease;
-        }
-
-        .footer-column ul li a:hover {
-            color: #ffe0e6;
-        }
-
-        .fleur {
-            width: 150px;
-            height: auto;
-        }
-
-        .footer-bottom {
-            text-align: center;
-            margin-top: 20px;
-        }
-
-        .footer-bottom p {
-            margin: 0;
-            font-size: 14px;
-            color: white;
-        }
-    </style>
 </head>
 
 <body>
     <header>
         <a href="index.html">
-            <img src="logo.png" alt="Logo Emilie Leduc" class="logo">
+            <img src="images/logo.png" alt="Logo Emilie Leduc" class="logo">
         </a>
         
         <!-- Menu de navigation à droite -->
         <nav>
-            <a href="#portfolio">Mon Portfolio</a>
-            <a href="#services">Mes Services</a>
-            <a href="#moi">Qui suis-je</a>
-            <a href="#contact" id="contact-link">Contact</a>
+            <a href="portfolio.html">Mon Portfolio</a>
+            <a href="services.html">Mes Services</a>
+            <a href="moi.html">Qui suis-je</a>
+            <a href="contact.html" id="contact-link">Contact</a>
         </nav>
     </header>
 
@@ -165,7 +38,7 @@
 
     <!-- Section "À propos" avec image et texte -->
     <section id="about-section">
-        <img src="fleur.png" alt="Dessin de fleur">
+        <img src="images/fleur.png" alt="Dessin de fleur">
         <div>
             <h2>À propos de moi</h2>
             <p>Je suis passionnée par la création et l'innovation. Mes voyages à travers le monde ont élargi mes perspectives et ont nourri ma créativité. Dans ce blog, je partagerai mes découvertes, mes projets, et tout ce qui me tient à cœur.</p>
@@ -174,7 +47,7 @@
 
     <!-- Copie de la section "À propos" -->
     <section id="about-section">
-        <img src="fleur.png" alt="Dessin de fleur">
+        <img src="images/fleur.png" alt="Dessin de fleur">
         <div>
             <h2>À propos de moi</h2>
             <p>Je suis passionnée par la création et l'innovation. Mes voyages à travers le monde ont élargi mes perspectives et ont nourri ma créativité. Dans ce blog, je partagerai mes découvertes, mes projets, et tout ce qui me tient à cœur.</p>
@@ -183,7 +56,7 @@
 
     <!-- Copie de la section "À propos" -->
     <section id="about-section">
-        <img src="fleur.png" alt="Dessin de fleur">
+        <img src="images/fleur.png" alt="Dessin de fleur">
         <div>
             <h2>À propos de moi</h2>
             <p>Je suis passionnée par la création et l'innovation. Mes voyages à travers le monde ont élargi mes perspectives et ont nourri ma créativité. Dans ce blog, je partagerai mes découvertes, mes projets, et tout ce qui me tient à cœur.</p>
@@ -197,15 +70,15 @@
             <div class="footer-column">
                 <h3 class="white-text">Navigation</h3>
                 <ul>
-                    <li><a href="index.html#projects">Mes Projets</a></li>
+                    <li><a href="portfolio.html">Mon Portfolio</a></li>
                     <li><a href="services.html">Mes Services</a></li>
-                    <li><a href="about.html">Qui suis-je</a></li>
+                    <li><a href="moi.html">Qui suis-je</a></li>
                 </ul>
             </div>
 
             <!-- Colonne centrale : Fleur -->
             <div class="footer-column">
-                <img src="fleur.png" alt="Dessin de fleur" class="fleur">
+                <img src="images/fleur.png" alt="Dessin de fleur" class="fleur">
             </div>
 
             <!-- Colonne droite : Réseaux sociaux -->
