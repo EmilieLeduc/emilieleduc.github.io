@@ -5,101 +5,168 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Emilie Leduc</title>
-    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png"> <!-- Ajout du favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png"> <!-- Favicon -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style/style.css">
- 
 </head>
+<style>
+.profile-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    text-align: center;  
+}
 
+.profile-section img {
+    width: 500px; /* Taille plus grande */
+    height: auto; /* Garde le ratio d'origine */
+    border-radius: 50%; /* Forme ronde */
+    margin-bottom: 15px;
+}
+
+.profile-section h1,
+.profile-section p {
+    margin: 0;
+    padding: 5px 0;
+}
+/* Style général pour le titre principal (h1) */
+.profile-section h1 {
+    font-size: 2.5em;
+    color: #333333;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 20px 0 10px 0;
+    border-bottom: 3px solid #e60073; /* Ligne colorée en dessous */
+    padding-bottom: 10px;
+}
+
+/* Style pour les sous-titres (h2) */
+section h2 {
+    font-size: 2em;
+    color: #fa6464; /* Couleur d'accent */
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin: 20px 0;
+    position: relative;
+}
+
+/* Ajout d'une ligne décorative sous chaque h2 */
+section h2::after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 3px;
+    background-color: #333333;
+    margin: 10px auto 0;
+}
+
+</style>
 <body>
-    <header>
+    <header class="d-flex justify-content-between align-items-center p-3 border-bottom">
         <a href="index.html">
             <img src="images/logo.png" alt="Logo Emilie Leduc" class="logo">
         </a>
         
-        <!-- Menu de navigation à droite -->
         <nav>
-            <a href="portfolio.html">Mon Portfolio</a>
-            <a href="services.html">Mes Services</a>
-            <a href="moi.html">Qui suis-je</a>
+            <a href="portfolio.html" class="mr-3">Mon Portfolio</a>
+            <a href="services.html" class="mr-3">Mes Services</a>
+            <a href="moi.html" class="mr-3">Qui suis-je</a>
             <a href="contact.html" id="contact-link">Contact</a>
         </nav>
     </header>
 
-    <!-- Section avec photo et fond coloré -->
-    <div class="profile-section">
-        <img src="images/photo.png.png" alt="Votre photo">
-        <h1>Emilie Leduc</h1>
-        <p>Identité visuelle | Graphisme | Social Media | Communication 360° | Evènements</p>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-6 text-center profile-section p-3">
+                <img src="images/photo.png" alt="Votre photo" class="img-fluid rounded-circle mb-3" style="max-width: 400px;">
+                <h1>Emilie Leduc</h1>
+                <p>Identité visuelle | Graphisme | Social Media | Communication 360° | Evènements</p>
+            </div>
+            <div class="col-md-6">
+                <section id="about" class="mb-5">
+                    <h2>À propos de moi</h2>
+                    <p>Récemment diplômée d’un Master Marketing & Communication, je recherche activement un poste en Communication. Grâce à mes trois années d'alternance, j'ai acquis des compétences en rédaction d'articles, gestion des réseaux sociaux, design graphique, organisation d’événements et relations presse. Je m'adapte facilement et suis force de proposition pour renforcer la visibilité de votre entreprise. Découvrez sur mon Portfolio, une sélection de mes meilleurs projets.</p>
+                </section>
+
+                <section id="portfolio" class="mb-5">
+                    <h2>Mon Portfolio</h2>
+                    <div class="row">
+                        <div class="col-md-4 mb-3">
+                            <div class="project p-3 bg-light text-center h-100">
+                                <h3>Projet 1</h3>
+                                <p>Description du projet. Inclure un logo ou un design réalisé, ou un lien vers le projet.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <div class="project p-3 bg-light text-center h-100">
+                                <h3>Projet 2</h3>
+                                <p>Description du projet. Inclure un logo ou un design réalisé, ou un lien vers le projet.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <div class="project p-3 bg-light text-center h-100">
+                                <h3>Projet 3</h3>
+                                <p>Description du projet. Inclure un logo ou un design réalisé, ou un lien vers le projet.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="cv" class="mb-5">
+                    <h2>Mon CV</h2>
+                    <p>Vous pouvez télécharger mon CV en cliquant sur le lien ci-dessous :</p>
+                    <a href="images/cv.pdf" target="_blank" class="btn btn-primary">Télécharger mon CV</a>
+                </section>
+                
+                <section id="contact" class="mb-5">
+                    <h2>Contactez-moi</h2>
+                    <p>Email: <a href="mailto:leduc.emilie2000@gmail.com">leduc.emilie2000@gmail.com</a></p>
+                    <p>Téléphone: 06 05 10 84 43</p>
+                </section>
+            </div>
+        </div>
     </div>
 
-    <section id="about">
-        <h2>À propos de moi</h2>
-        <p>Récemment diplômée d’un Master Marketing & Communication, je recherche activement un poste en Communication. Grâce à mes trois années d'alternance, j'ai acquis des compétences en rédaction d'articles, gestion des réseaux sociaux, design graphique, organisation d’événements et relations presse. Je m'adapte facilement et suis force de proposition pour renforcer la visibilité de votre entreprise. Découvrez sur mon Portfolio, une sélection de mes meilleurs projets.</p>
-    </section>
+    <footer class="text-white mt-5 p-3">
+        <div class="container">
+            <div class="row">
+                <!-- Colonne gauche : Navigation -->
+                <div class="col-md-4 mb-3">
+                    <h3>Navigation</h3>
+                    <ul class="list-unstyled">
+                        <li><a href="portfolio.html" class="text-white">Mon Portfolio</a></li>
+                        <li><a href="services.html" class="text-white">Mes Services</a></li>
+                        <li><a href="moi.html" class="text-white">Qui suis-je</a></li>
+                    </ul>
+                </div>
 
-    <section id="portfolio">
-        <h2>Mon Portfolio</h2>
-        <div class="project-grid">
-            <div class="project">
-                <h3>Projet 1</h3>
-                <p>Description du projet. Inclure un logo ou un design réalisé, ou un lien vers le projet.</p>
-            </div>
-            <div class="project">
-                <h3>Projet 2</h3>
-                <p>Description du projet. Inclure un logo ou un design réalisé, ou un lien vers le projet.</p>
-            </div>
-            <div class="project">
-                <h3>Projet 3</h3>
-                <p>Description du projet. Inclure un logo ou un design réalisé, ou un lien vers le projet.</p>
+                <!-- Colonne centrale : Fleur (agrandie) -->
+                <div class="col-md-4 text-center">
+                    <img src="images/fleur.png" alt="Dessin de fleur" class="img-fluid fleur">
+                </div>
+
+                <!-- Colonne droite : Réseaux sociaux -->
+                <div class="col-md-4 mb-3">
+                    <h3>Suivez-moi</h3>
+                    <ul class="list-unstyled">
+                        <li><a href="https://www.instagram.com/instagram" target="_blank" class="text-white">Instagram</a></li>
+                        <li><a href="https://www.malt.fr/profile/emilieleduc1" target="_blank" class="text-white">Malt</a></li>
+                        <li><a href="https://www.linkedin.com/in/e-leduc" target="_blank" class="text-white">LinkedIn</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
-    </section>
-
-    <section id="cv">
-        <h2>Mon CV</h2>
-        <p>Vous pouvez télécharger mon CV en cliquant sur le lien ci-dessous :</p>
-        <a href="images/cv.pdf.pdf" target="_blank">Télécharger mon CV</a>
-    </section>
-    
-    <section id="contact">
-        <h2>Contactez-moi</h2>
-        <p>Email: <a href="mailto:leduc.emilie2000@gmail.com">leduc.emilie2000@gmail.com</a></p>
-        <p>Téléphone: 06 05 10 84 43</p>
-    </section>
-
-    <footer>
-        <div class="footer-container">
-            <!-- Colonne gauche : Liens de navigation -->
-            <div class="footer-column">
-                <h3 class="red-text">Navigation</h3>
-                <ul>
-                    <li><a href="portfolio.html">Mon Portfolio</a></li>
-                    <li><a href="services.html">Mes Services</a></li>
-                    <li><a href="moi.html">Qui suis-je</a></li>
-                </ul>
-            </div>
-    
-            <!-- Colonne centrale : Fleur (agrandie) -->
-            <div class="footer-column">
-                <img src="images/fleur.png" alt="Dessin de fleur" class="fleur">
-            </div>
-    
-            <!-- Colonne droite : Réseaux sociaux -->
-            <div class="footer-column">
-                <h3 class="red-text">Suivez-moi</h3>
-                <ul>
-                    <li><a href="https://www.instagram.com/instagram" target="_blank">Instagram</a></li>
-                    <li><a href="https://www.malt.fr/profile/emilieleduc1" target="_blank">Malt</a></li>
-                    <li><a href="https://www.linkedin.com/in/e-leduc" target="_blank">LinkedIn</a></li>
-                </ul>
-            </div>
-        </div>
-    
-        <!-- Phrase centrée sous le footer -->
-        <div class="footer-bottom">
+        <div class="text-center mt-3">
             <p>2024 Emilie Leduc - Tous droits réservés.</p>
         </div>
     </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
